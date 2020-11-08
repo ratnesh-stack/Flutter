@@ -22,14 +22,17 @@ class PreviewPage extends StatelessWidget {
           Expanded(
             child: AspectRatio(
               aspectRatio: 1 / 2,
-              child: Center(
-                child: Container(
-                  padding: EdgeInsets.all(20),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(50)),
-                    border: Border.all(width: 10),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                child: Center(
+                  child: Container(
+                    padding: EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(50)),
+                      border: Border.all(width: 10),
+                    ),
+                    child: LandingPage(),
                   ),
-                  child: LandingPage(),
                 ),
               ),
             ),
