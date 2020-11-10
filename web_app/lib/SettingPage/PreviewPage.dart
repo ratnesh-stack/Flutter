@@ -12,8 +12,15 @@ class PreviewPage extends StatelessWidget {
       flex: 2,
       child: Column(
         children: [
-          Text("Preview"),
-          LandingPage(),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 16.0),
+            child: Text(
+              "Preview",
+              style: Theme.of(context).textTheme.headline3,
+            ),
+          ),
+          Expanded(child: LandingPage()),
+          SizedBox(height: 16),
         ],
       ),
     );
