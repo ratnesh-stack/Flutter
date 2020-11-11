@@ -19,7 +19,19 @@ class PreviewPage extends StatelessWidget {
               style: Theme.of(context).textTheme.headline3,
             ),
           ),
-          Expanded(child: LandingPage()),
+          Expanded(
+            child: AspectRatio(
+              aspectRatio: 1 / 2,
+              child: Container(
+                padding: EdgeInsets.all(20),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(50)),
+                  border: Border.all(width: 10),
+                ),
+                child: LandingPage(),
+              ),
+            ),
+          ),
           SizedBox(height: 16),
         ],
       ),
