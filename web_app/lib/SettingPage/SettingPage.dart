@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'PreviewPage.dart';
 
 class SettingPage extends StatelessWidget {
   @override
@@ -10,10 +11,7 @@ class SettingPage extends StatelessWidget {
             flex: 3,
             child: Container(color: Colors.blueGrey.shade50),
           ),
-          Expanded(
-            flex: 2,
-            child: Container(color: Colors.white),
-          ),
+          PreviewPage(),
         ],
       ),
     );

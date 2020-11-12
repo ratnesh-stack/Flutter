@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:web_app/LandingPage.dart';
-import 'package:web_app/NotFoundPage.dart';
-import 'package:web_app/SettingPage.dart';
+import 'package:web_app/LandingPage/LandingPage.dart';
+
+import 'package:web_app/SettingPage/NotFoundPage.dart';
+import 'package:web_app/SettingPage/SettingPage.dart';
 //import 'LandingPage.dart';
-import './SettingPage.dart';
+import 'SettingPage/SettingPage.dart';
 
 void main() {
   runApp(MyApp());

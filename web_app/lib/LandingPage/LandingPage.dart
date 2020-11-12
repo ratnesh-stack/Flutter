@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import './Footer.dart';
 import 'ButtonLink.dart';
-import './Constants.dart';
+import '../Constants.dart';
 
 class LandingPage extends StatelessWidget {
   @override
