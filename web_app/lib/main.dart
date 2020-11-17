@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'LandingPage.dart';
+import 'package:web_app/LandingPage.dart';
+import 'package:web_app/SettingPage.dart';
+//import 'LandingPage.dart';
+import './SettingPage.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +16,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: LandingPage(),
+      initialRoute: "/",
+      routes: {
+        "/": (context) => LandingPage(),
+        "/settings": (context) => SettingPage(),
+      },
     );
   }
 }
