@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:web_app/LandingPage.dart';
+import 'package:web_app/NotFoundPage.dart';
 import 'package:web_app/SettingPage.dart';
 //import 'LandingPage.dart';
 import './SettingPage.dart';
@@ -20,6 +21,13 @@ class MyApp extends StatelessWidget {
       routes: {
         "/": (context) => LandingPage(),
         "/settings": (context) => SettingPage(),
+      },
+      onUnknownRoute: (settings) {
+        return MaterialPageRoute(
+          builder: (context) {
+            return NotFoundPage();
+          },
+        );
       },
     );
   }
