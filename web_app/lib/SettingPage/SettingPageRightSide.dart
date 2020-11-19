@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:web_app/LandingPage/LandingPage.dart';
 
-class PreviewPage extends StatelessWidget {
-  const PreviewPage({
+class SettingPageRightSide extends StatelessWidget {
+  const SettingPageRightSide({
     Key key,
   }) : super(key: key);
 
@@ -13,7 +13,7 @@ class PreviewPage extends StatelessWidget {
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 16.0),
+            padding: const EdgeInsets.symmetric(vertical: 8.0),
             child: Text(
               "Preview",
               style: Theme.of(context).textTheme.headline3,
@@ -26,7 +26,7 @@ class PreviewPage extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 16.0),
                 child: Center(
                   child: Container(
-                    padding: EdgeInsets.all(20),
+                    padding: EdgeInsets.all(15),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.all(Radius.circular(50)),
                       border: Border.all(width: 10),

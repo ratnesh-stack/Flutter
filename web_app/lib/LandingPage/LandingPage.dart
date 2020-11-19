@@ -10,7 +10,7 @@ class LandingPage extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(
-            height: 30,
+            height: 5,
           ),
           CircleAvatar(
             backgroundImage: NetworkImage(image),
@@ -18,7 +18,7 @@ class LandingPage extends StatelessWidget {
             radius: 50,
           ),
           SizedBox(
-            height: 15,
+            height: 10,
           ),
           Text(
             "@socialHandle",

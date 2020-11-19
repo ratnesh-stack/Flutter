@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'PreviewPage.dart';
+import 'SettingPageRightSide.dart';
+import 'SettingPageLeftSide.dart';
 
 class SettingPage extends StatelessWidget {
   @override
@@ -7,11 +8,8 @@ class SettingPage extends StatelessWidget {
     return Scaffold(
       body: Row(
         children: [
-          Expanded(
-            flex: 3,
-            child: Container(color: Colors.blueGrey.shade50),
-          ),
-          PreviewPage(),
+          SettingPageLeftSide(),
+          SettingPageRightSide(),
         ],
       ),
     );
