@@ -47,15 +47,48 @@ class MyHomePage extends StatelessWidget {
                     child: Row(
                   children: [
                     Container(
-                      margin:
-                          EdgeInsets.symmetric(horizontal: 10, vertical: 15),
+                      margin: EdgeInsets.symmetric(
+                        horizontal: 15,
+                        vertical: 15,
+                      ),
                       decoration: BoxDecoration(
-                          border: Border.all(color: Colors.black, width: 2)),
-                      child: Text(tx.amount.toString()),
+                        border: Border.all(
+                          color: Colors.purple,
+                          width: 2,
+                        ),
+                      ),
+                      padding: EdgeInsets.all(10),
+                      child: Text(
+                        '\$${tx.amount}',
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.purple,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ),
                     Column(
-                      children: [Text(tx.title), Text(tx.date.toString())],
-                    )
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          tx.title,
+                          textAlign: TextAlign.end,
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 15,
+                          ),
+                        ),
+                        Text(
+                          tx.date.toString(),
+                          textAlign: TextAlign.start,
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontWeight: FontWeight.normal,
+                          ),
+                        )
+                      ],
+                    ),
                   ],
                 ));
               }).toList(),
