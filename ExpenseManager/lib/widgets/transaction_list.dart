@@ -22,7 +22,7 @@ class TransactionList extends StatelessWidget {
                   ),
                   decoration: BoxDecoration(
                     border: Border.all(
-                      color: Colors.purple,
+                      color: Theme.of(context).primaryColorLight,
                       width: 2,
                     ),
                   ),
@@ -31,7 +31,7 @@ class TransactionList extends StatelessWidget {
                     '\$${transactions[index].amount.toStringAsFixed(2)}',
                     style: TextStyle(
                       fontSize: 20,
-                      color: Colors.purple,
+                      color: Theme.of(context).primaryColor,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -42,11 +42,7 @@ class TransactionList extends StatelessWidget {
                     Text(
                       transactions[index].title,
                       textAlign: TextAlign.end,
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 15,
-                      ),
+                      style: Theme.of(context).textTheme.title,
                     ),
                     Text(
                       DateFormat().format(transactions[index].date),
