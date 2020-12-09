@@ -1,3 +1,3 @@
 # Flutter
-Flutter | Web | Andriod | iOS
+Flutter | Web | Android | iOS
 This repository contain Flutter Learning Curve.
